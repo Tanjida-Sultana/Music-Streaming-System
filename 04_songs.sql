@@ -15,13 +15,13 @@ CREATE TABLE `SONGS` (
 -- Insert values in SONGS table
 
 INSERT INTO `songs` (`title`, `duration`, `genre`, `play_count`, `artist_id`) VALUES
-('Faded', '00:03:32', 'EDM', 0,
+('Faded', '00:03:32', 'EDM', 998686,
  (SELECT artist_id FROM artists WHERE name = 'Alan Walker')),
-('Alone', '00:02:41', 'EDM', 0,
+('Alone', '00:02:41', 'EDM', 655487,
  (SELECT artist_id FROM artists WHERE name = 'Alan Walker')),
-('Sweet but Psycho', '00:03:07', 'Pop', 0,
+('Sweet but Psycho', '00:03:07', 'Pop', 99823,
  (SELECT artist_id FROM artists WHERE name = 'Ava Max')),
-('Salt', '00:03:00', 'Pop', 0,
+('Salt', '00:03:00', 'Pop', 995567,
  (SELECT artist_id FROM artists WHERE name = 'Ava Max')),
-('Chandelier', '00:03:36', 'Pop', 0,
+('Chandelier', '00:03:36', 'Pop', 43324,
  (SELECT artist_id FROM artists WHERE name = 'Sia Kate'));
