@@ -9,9 +9,9 @@ CREATE TABLE `PLAYLISTS_SONGS`(
 
 -- Insert values in Playlists table
 
-INSERT INTO `PLAYLISTS_SONGS` () VALUES
-(),
-(),
-(),
-(),
-();
+INSERT INTO `PLAYLISTS_SONGS` (playlist_id, song_id) VALUES
+(2,5),
+(1,4),
+(4,2),
+(3,1),
+(5,3);
