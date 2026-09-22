@@ -9,9 +9,9 @@ CREATE TABLE `PLAYLISTS`(
 
 -- Insert values in Playlists table
 
-INSERT INTO `PLAYLISTS` (title) VALUES
-("Pop playlist"),
-("Leisure playlist"),
-("Sweet songs"),
-("Favourite songs"),
-("Playlist 1");
+INSERT INTO `PLAYLISTS` (title, user_id) VALUES
+("Pop playlist", 1),
+("Leisure playlist", 3),
+("Sweet songs", 4),
+("Favourite songs", 2),
+("Playlist 1", 5);
