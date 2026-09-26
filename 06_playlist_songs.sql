@@ -1,20 +1,10 @@
 USE Music_Library;
 
-CREATE TABLE `PLAYLISTS_SONGS`(
-    `playlist_id` INT PRIMARY KEY,
-    FOREIGN KEY (playlist_id) REFERENCES playlists(playlist_id) ON DELETE CASCADE,
-    `song_id` INT,
-    FOREIGN KEY (song_id) REFERENCES songs(song_id) ON DELETE CASCADE,
-    `added_at` DATETIME DEFAULT CURRENT_TIMESTAMP);
-
--- Insert values in Playlists table
-
-INSERT INTO `PLAYLISTS_SONGS` (playlist_id, song_id) VALUES
-(2,5),
-(1,4),
-(4,2),
-(3,1),
-(5,3);
-
-ALTER TABLE PLAYLISTS_SONGS DROP PRIMARY KEY;
-ALTER TABLE PLAYLISTS_SONGS ADD PRIMARY KEY (playlist_id, song_id);
+CREATE TABLE `PLAYLISTS_SONGS` (
+    `playlist_id` INT NOT NULL,
+    `song_id` INT NOT NULL,
+    `added_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (`playlist_id`, `song_id`),
+    FOREIGN KEY (`playlist_id`) REFERENCES `playlists`(`playlist_id`) ON DELETE CASCADE,
+    FOREIGN KEY (`song_id`) REFERENCES `songs`(`song_id`) ON DELETE CASCADE
+) ENGINE=InnoDB;
