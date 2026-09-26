@@ -7,4 +7,4 @@ CREATE TABLE `PLAYLISTS_SONGS` (
     PRIMARY KEY (`playlist_id`, `song_id`),
     FOREIGN KEY (`playlist_id`) REFERENCES `playlists`(`playlist_id`) ON DELETE CASCADE,
     FOREIGN KEY (`song_id`) REFERENCES `songs`(`song_id`) ON DELETE CASCADE
-) ENGINE=InnoDB;
+) ENGINE=InnoDB; -- storage engine to read, write and update data
