@@ -1,0 +1,14 @@
+Installation procedure:
+
+1. First load the entire database to XAMPP properly.
+2. Go to "C:\xampp" or wherever the program is installed on your device.
+3. Open the "htdocs" folder in the "xampp" folder and extract the file using 7-zip.
+4. Make sure the name of the extracted folder is "Music_library" to avoid any future errors.
+5. To open the website choose a preferable browser and go to the search bar and type the following and then hit enter: http://localhost/music_library/ 
+
+IN CASE OF FAILED DOWNLOAD/CORRUPTED FILES PLEASE DOWNLOAD AGAIN OR CONTACT THE CONTRIBUTORS.
+
+DISCLAIMER:
+
+AI has been used for making the frontend of the website as well as some backend. AI debugging and personal debugging both are used for making the sql files and database as accurate as possible.
+All sql files are uploaded in the GitHub repository so feel free to check them out.
