@@ -24,3 +24,5 @@ INSERT INTO `artists` (`name`, `age`, `bio`) VALUES
 ('Hugh Cornwell', 77, 'primary creator, lead lyricist, and vocalist of the song "Golden Brown".');
 
 ALTER TABLE artists AUTO_INCREMENT = 1;
+ALTER TABLE artists ADD COLUMN age INT(11) DEFAULT NULL;
+ALTER TABLE artists ADD COLUMN bio TEXT DEFAULT NULL;
