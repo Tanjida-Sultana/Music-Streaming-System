@@ -25,3 +25,5 @@ INSERT INTO `songs` (`title`, `duration`, `genre`, `play_count`, `artist_id`) VA
  (SELECT artist_id FROM artists WHERE name = 'Ava Max')),
 ('Chandelier', '00:03:36', 'Pop', 43324,
  (SELECT artist_id FROM artists WHERE name = 'Sia Kate'));
+
+ALTER TABLE songs ADD COLUMN youtube_url VARCHAR(255) DEFAULT NULL;
