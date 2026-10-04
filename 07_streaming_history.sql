@@ -8,8 +8,3 @@ CREATE TABLE `streaming_history`(
     FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE CASCADE,
     `played_at` DATETIME DEFAULT CURRENT_TIMESTAMP);
 
--- Insert values in streaming history table
-
-INSERT INTO `streaming_history` (user_id, song_id, played_at) VALUES
-(1, 4, NOW()),
-(2, 5, NOW());
