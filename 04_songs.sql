@@ -27,3 +27,4 @@ INSERT INTO `songs` (`title`, `duration`, `genre`, `play_count`, `artist_id`) VA
  (SELECT artist_id FROM artists WHERE name = 'Sia Kate'));
 
 ALTER TABLE songs ADD COLUMN youtube_url VARCHAR(255) DEFAULT NULL;
+ALTER TABLE songs ADD COLUMN album_id INT(11) DEFAULT NULL;
