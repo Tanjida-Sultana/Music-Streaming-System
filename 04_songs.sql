@@ -28,3 +28,4 @@ INSERT INTO `songs` (`title`, `duration`, `genre`, `play_count`, `artist_id`) VA
 
 ALTER TABLE songs ADD COLUMN youtube_url VARCHAR(255) DEFAULT NULL;
 ALTER TABLE songs ADD COLUMN album_id INT(11) DEFAULT NULL;
+ALTER TABLE songs ADD CONSTRAINT fk_song_album FOREIGN KEY (album_id) REFERENCES albums(album_id) ON DELETE SET NULL;
